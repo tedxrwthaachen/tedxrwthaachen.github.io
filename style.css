@@ -23,21 +23,13 @@
   object-fit: cover;
 }
 
-.desktop .overlap {
-  position: absolute;
-  width: 865px;
-  height: 351px;
-  top: 457px;
-  left: 287px;
-}
-
 .desktop .we-will-be-back-soon {
   position: absolute;
-  width: 865px;
-  height: 113px;
-  top: 238px;
-  left: 0;
-  font-family: "Roboto Flex", Helvetica;
+  width: 808px;
+  height: 68px;
+  top: 760px;
+  left: 321px;
+  font-family: "Roboto Flex-Medium", Helvetica;
   font-weight: 500;
   color: #ffffff;
   font-size: 96px;
@@ -46,19 +38,11 @@
   line-height: normal;
 }
 
-.desktop .logo-white {
-  position: absolute;
-  width: 797px;
-  height: 239px;
-  top: 0;
-  left: 34px;
-}
-
 .desktop .group {
   position: absolute;
   width: 221px;
   height: 90px;
-  top: 836px;
+  top: 893px;
   left: 610px;
 }
 
@@ -87,11 +71,19 @@
   height: 48px;
   top: 21px;
   left: 44px;
-  font-family: "Roboto Flex", Helvetica;
+  font-family: "Roboto Flex-SemiBold", Helvetica;
   font-weight: 600;
   color: #ffffff;
   font-size: 40px;
   text-align: center;
   letter-spacing: 0;
   line-height: normal;
+}
+
+.desktop .logo-white {
+  position: absolute;
+  width: 797px;
+  height: 239px;
+  top: 457px;
+  left: 321px;
 }
