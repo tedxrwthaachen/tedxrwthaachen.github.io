@@ -1,4 +1,4 @@
-## Currently working ont the website 👋
+## Currently working on the website 👋
 
 <!--
 **tedxrwthaachen/tedxrwthaachen** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
