@@ -1,6 +1,104 @@
-.partners-page {
-height: 100vh;
+/*Partners Section*/
+.partners-section {
+padding: 20px;
 }
-.first-page {
-height: 100vh;
+.partners-title {
+font-size: 36px;
+font-weight: bold;
+color: #ff0055;
+margin-bottom: 20px;
+text-align: center;
+}
+.partners-container {
+display: grid;
+grid-template-columns: repeat(2, 1fr);
+grid-gap: 20px;
+justify-items: center;
+margin: 0;
+padding: 0;
+}
+.gold-sponsor,
+.silver-sponsor,
+.bronze-sponsor,
+.other-sponsors {
+display: flex;
+justify-content: center;
+align-items: center;
+
+}
+.gold-sponsor img, 
+.silver-sponsor img, 
+.bronze-sponsor img, 
+.other-sponsor img {
+width: 400px;
+height: auto;
+}
+.gold-sponsor img:hover, 
+.silver-sponsor img:hover, 
+.bronze-sponsor img:hover, 
+.other-sponsor img:hover {
+opacity: .7;
+}
+.marquee {
+width: 100%;
+overflow: hidden;
+white-space: nowrap;
+box-sizing: border-box;
+}
+.marquee span {
+display: inline-block;
+padding-left: 100%;
+animation: marquee 10s linear infinite;
+}
+@keyframes marquee {
+from {
+transform: translateX(0);
+}
+to {
+transform: translateX(-100%);
+}
+}
+/*Past Talks Section*/
+.past-talks-section {
+text-align: center;
+margin: 50px 0;
+}
+.past-talks-section h2 {
+font-size: 2em;
+color: red; /* Adjust the color as needed */
+margin-bottom: 30px;
+}
+.videos-container {
+display: flex;
+justify-content: center;
+gap: 20px;
+flex-wrap: wrap;
+}
+.video {
+max-width: 450px;
+}
+.video iframe {
+width: 450px;
+height: 280px;
+}
+.video p {
+font-size: 1em;
+color: #000;
+margin-top: 10px;
+}
+.button-container {
+margin-top: 30px;
+}
+.discover-more-button {
+display: inline-block;
+padding: 15px 30px;
+background-color: red; /* Adjust the color as needed */
+color: #fff;
+text-decoration: none;
+font-size: 1.2em;
+border-radius: 5px;
+transition: background-color 0.3s ease;
+}
+.discover-more-button:hover {
+opacity: .7;
 }
