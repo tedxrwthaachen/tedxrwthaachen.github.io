@@ -58,6 +58,12 @@ to {
 transform: translateX(-100%);
 }
 }
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .partners-container {
+        grid-template-columns: 1fr;
+    }
+}
 /*Past Talks Section*/
 .past-talks-section {
 text-align: center;
@@ -78,7 +84,7 @@ flex-wrap: wrap;
 max-width: 450px;
 }
 .video iframe {
-width: 450px;
+width: 100%;
 height: 280px;
 }
 .video p {
