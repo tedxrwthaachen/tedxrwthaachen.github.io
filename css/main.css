@@ -76,12 +76,10 @@ margin-bottom: 30px;
 }
 .videos-container {
 display: flex;
-justify-content: center;
-gap: 20px;
-flex-wrap: wrap;
+justify-content: space-around;
 }
 .video {
-max-width: 450px;
+max-width: 500px;
 }
 .video iframe {
 width: 100%;
