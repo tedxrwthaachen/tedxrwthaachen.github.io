@@ -1,8 +1,11 @@
-.text-section {
+.text-sections {
 font-family: Arial, sans-serif;
 line-height: 1.6;
 margin: 100px;
 color: #000;
+}
+.text-section {
+margin-bottom: 40px;
 }
 h1, h2, h3, h4 {
 font-weight: normal;
@@ -30,9 +33,6 @@ margin-bottom: 10px;
 }
 p {
 margin-bottom: 20px;
-}
-.section {
-margin-bottom: 40px;
 }
 a {
 color: red;

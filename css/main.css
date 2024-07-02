@@ -1,6 +1,7 @@
-/*Partners Section*/
+/* Partners Section */
 .partners-section {
 padding: 20px;
+background-color: #f9f9f9;
 }
 .partners-title {
 font-size: 36px;
@@ -11,33 +12,25 @@ text-align: center;
 }
 .partners-container {
 display: grid;
-grid-template-columns: repeat(2, 1fr);
+grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
 grid-gap: 20px;
 justify-items: center;
-margin: 0;
-padding: 0;
-}
-.gold-sponsor,
-.silver-sponsor,
-.bronze-sponsor,
-.other-sponsors {
-display: flex;
-justify-content: center;
 align-items: center;
-
 }
-.gold-sponsor img, 
-.silver-sponsor img, 
-.bronze-sponsor img, 
-.other-sponsor img {
-width: 400px;
+.sponsor img {
+width: 100%;
+max-width: 200px;
 height: auto;
+transition: opacity 0.3s ease;
 }
-.gold-sponsor img:hover, 
-.silver-sponsor img:hover, 
-.bronze-sponsor img:hover, 
-.other-sponsor img:hover {
-opacity: .7;
+.sponsor img:hover {
+opacity: 0.7;
+}
+/* Responsive Adjustments */
+@media (max-width: 850px) {
+.partners-container {
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+}
 }
 .marquee {
 width: 100%;
@@ -58,12 +51,7 @@ to {
 transform: translateX(-100%);
 }
 }
-/* Responsive Adjustments */
-@media (max-width: 850px) {
-    .partners-container {
-        grid-template-columns: 1fr;
-    }
-}
+
 /*Past Talks Section*/
 .past-talks-section {
 text-align: center;
