@@ -1,0 +1,74 @@
+/*Team img Section*/
+.team-section {
+position: relative;
+width: 100%;
+max-width: 1200px;
+margin: 0 auto;
+}
+.team-image {
+width: 100%;
+height: auto;
+}
+.text-overlay {
+position: absolute;
+top: 20%;
+left: 50%;
+transform: translateX(-50%);
+color: white;
+background-color: rgba(0, 0, 0, 0.5);
+padding: 20px;
+border-radius: 10px;
+max-width: 600px;
+text-align: center;
+}
+.text-overlay p {
+margin: 10px 0;
+font-size: 1.2em;
+line-height: 1.5em;
+}
+
+/*Teams Section*/
+.teams-section {
+text-align: center;
+padding: 50px 20px;
+}
+.teams-section h2 {
+color: red;
+font-size: 24px;
+margin-bottom: 40px;
+}
+.team {
+display: inline-block;
+width: 30%;
+margin: 0 1.5%;
+vertical-align: top;
+text-align: center;
+}
+.team img.team-image {
+width: 100%;
+height: auto;
+}
+.team h3 {
+font-size: 22px;
+margin: 20px 0 10px;
+}
+.team p {
+font-size: 16px;
+line-height: 1.5em;
+margin: 0 10px 20px;
+}
+.join-us {
+margin-top: 40px;
+}
+@media (max-width: 768px) {
+.team {
+    display: block;
+    width: 100%;
+    margin: 20px 0;
+}
+
+.join-button {
+    width: 100%;
+    text-align: center;
+}
+}
