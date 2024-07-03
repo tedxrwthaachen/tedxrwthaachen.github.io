@@ -1,0 +1,196 @@
+/* Partners Section */
+.partners-section {
+padding: 20px;
+background-color: #f9f9f9;
+}
+.partners-title {
+font-size: 36px;
+font-weight: bold;
+color: red;
+margin-bottom: 20px;
+text-align: center;
+}
+.partners-container {
+display: grid;
+grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+grid-gap: 20px;
+justify-items: center;
+align-items: center;
+}
+.sponsor img {
+width: 100%;
+max-width: 200px;
+height: auto;
+transition: opacity 0.3s ease;
+}
+.sponsor img:hover {
+opacity: 0.7;
+}
+/* Responsive Adjustments */
+@media (max-width: 850px) {
+.partners-container {
+grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+}
+}
+.marquee {
+width: 100%;
+overflow: hidden;
+white-space: nowrap;
+box-sizing: border-box;
+}
+.marquee span {
+display: inline-block;
+padding-left: 100%;
+animation: marquee 10s linear infinite;
+}
+@keyframes marquee {
+from {
+transform: translateX(0);
+}
+to {
+transform: translateX(-100%);
+}
+}
+/* Benefits Section */
+.benefits-section {
+padding: 40px 20px;
+background-color: #fff;
+text-align: center;
+}
+.benefits-title {
+font-size: 36px;
+font-weight: bold;
+color: red;
+margin-bottom: 20px;
+}
+.benefits-intro {
+font-size: 16px;
+max-width: 800px;
+color: #333;
+margin: 0 auto 40px auto;
+text-align: center;
+}
+.benefits-intro .get-in-touch {
+color: red;
+text-decoration: none;
+font-weight: bold;
+}
+.benefits-intro .get-in-touch:hover {
+text-decoration: underline;
+}
+
+/* Accordion Styles */
+.accordion {
+max-width: 800px;
+margin: 0 auto;
+text-align: left;
+}
+.accordion-item {
+border-bottom: 1px solid #ccc;
+overflow: hidden;
+margin-bottom: 10px;
+}
+.accordion-header {
+width: 100%;
+padding: 20px;
+background-color: #fff;
+border: none;
+outline: none;
+text-align: left;
+font-size: 18px;
+cursor: pointer;
+display: flex;
+justify-content: space-between;
+align-items: center;
+transition: background-color 0.3s ease;
+position: relative;
+}
+.accordion-header::after {
+content: "+";
+font-size: 24px;
+color: red;
+position: absolute;
+right: 20px;
+}
+.accordion-header.active {
+background-color: #f9f9f9;
+}
+.accordion-header.active::after {
+content: "-";
+}
+.accordion-content {
+max-height: 0;
+padding: 0 20px;
+background-color: #f9f9f9;
+overflow: hidden;
+transition: max-height 0.3s ease, padding 0.3s ease;
+}
+.accordion-content p {
+margin: 20px 0;
+}
+/* Responsive Adjustments */
+@media (max-width: 600px) {
+.benefits-title {
+font-size: 28px;
+}
+.benefits-intro {
+font-size: 14px;
+}
+.accordion-header {
+font-size: 16px;
+}
+}
+
+/* Support Our Mission Section */
+.support-section {
+padding: 40px 20px;
+background-color: #fff;
+text-align: center;
+}
+/* Past Partners Section */
+.past-partners-section {
+    padding: 40px 5%;
+    text-align: center;
+}
+.past-partners-title {
+    font-size: 36px;
+    font-weight: bold;
+    color:red;
+    margin-bottom: 20px;
+}
+.past-partners-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 50px;
+}
+.past-sponsor {
+    flex: 1 1 120px;
+    max-width: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.past-sponsor img {
+    width: 100%;
+    height: auto;
+    transition: opacity 0.3s ease;
+}
+.past-sponsor img:hover {
+    opacity: 0.7;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 600px) {
+    .support-button {
+        font-size: 16px;
+        padding: 10px 20px;
+    }
+    .past-partners-title {
+        font-size: 28px;
+    }
+    .past-sponsor {
+        flex: 1 1 80px;
+        max-width: 80px;
+    }
+}
