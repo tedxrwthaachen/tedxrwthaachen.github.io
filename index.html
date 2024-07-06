@@ -23,20 +23,45 @@
         </ul>
     </nav>  
 </header>
-<!--Past Talks Videos Section-->
-<section class="past-talks-section">
-    <h2>Discover some past talks</h2>
-    <div class="videos-container">
-        <div class="video">
-            <iframe src="https://www.youtube.com/embed/uP1stpUAv3c" frameborder="0" allowfullscreen></iframe>
-            <p><strong>How process mining improves the things you don't see</strong><br>Prof. Wil van der Aalst | TEDxRWTHAachen 2023</p>
+<!--Intro Section-->
+<section class="intro-section">
+    <div class="content-text">
+        <h1>If you haven't heard about our 2024 event, you can have a brief about it.</h1>
+        <p>Stay tuned for our upcoming Event</p>
+        <!--<div class="cta-button">GET NOTIFIED ABOUT NEXT APPLICATION PHASE</div>-->
+    </div>
+    <div class="content-image">
+        <img src="img/general/about-image.png" alt="Pic of 2024 event">
+    </div>
+</section>
+<!--Small About Us Section-->
+<section class="small-about-us">
+    <div class="about-us">
+        <h2>About TEDx RWTHAachen</h2>
+        <p>Our mission is to spread ideas for a better future and plant seeds in our engaging community with fresh ways of seeing the world. 
+            It’s a meeting place where we all have a chance to think critically on today’s society, reflect deeply on what’s happening in our culture, 
+            education, technology, and encourage each other to take action. Join us to chase the extraordinary stories that need to be shared!</p>
+            <a href="html/about.html"><button class="btndesign1">READ MORE</button></a>
+    </div>
+    
+    <div class="statistics">
+        <div class="stat">
+            <div class="number" data-target="11">0</div>
+            <div class="label">Events</div>
         </div>
-        <div class="video">
-            <iframe src="https://www.youtube.com/embed/csjFifU2Pxc" frameborder="0" allowfullscreen></iframe>
-            <p><strong>How Mind-Reading Technology conquers your Brain</strong><br>Katrin Cécile Ziegler | TEDxRWTHAachen 2020</p>
+        <div class="stat">
+            <div class="number" data-target="107">0</div>
+            <div class="label">Speakers & Performers</div>
+        </div>
+        <div class="stat">
+            <div class="number" data-target="3500">0</div>
+            <div class="label">Attendees</div>
+        </div>
+        <div class="stat">
+            <div class="number" data-target="40">0</div>
+            <div class="label">Team Members</div>
         </div>
     </div>
-    <a href="html/past-events.html"><button class="btndesign1">DISCOVER MORE TALKS</button></a>
 </section>
 <!--Our Sponsors Section-->
 <section class="partners-section">
@@ -80,6 +105,21 @@
     </div>-->
 
 </section>
+<!--Past Talks Videos Section-->
+<section class="past-talks-section">
+    <h2>Featured talks</h2>
+    <div class="videos-container">
+        <div class="video">
+            <iframe src="https://www.youtube.com/embed/uP1stpUAv3c" frameborder="0" allowfullscreen></iframe>
+            <p><strong>How process mining improves the things you don't see</strong><br>Prof. Wil van der Aalst | TEDxRWTHAachen 2023</p>
+        </div>
+        <div class="video">
+            <iframe src="https://www.youtube.com/embed/csjFifU2Pxc" frameborder="0" allowfullscreen></iframe>
+            <p><strong>How Mind-Reading Technology conquers your Brain</strong><br>Katrin Cécile Ziegler | TEDxRWTHAachen 2020</p>
+        </div>
+    </div>
+    <a href="html/past-events.html"><button class="btndesign1">DISCOVER MORE TALKS</button></a>
+</section>
 <!--Footer Section-->
 <section class="footer-section">
     <div class="footer-left">
@@ -87,7 +127,7 @@
         <p>TEDxRWTHAachen is an independently organized TEDx event operated under a license by TED</p>
     </div>
     <div class="footer-center">
-        <a href="contact.html">Contact</a>
+        <p>Contact<p>
         <p>General Inquiries</p>
         <a href="mailto:info@tedxrwthaachen.de">info@tedxrwthaachen.de</a>
         <p>Sponsorship & Partnership</p>
@@ -107,5 +147,31 @@
         </div>
     </div>
 </section>
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+    const counters = document.querySelectorAll('.number');
+    const duration = 2000; // Duration for the animation in milliseconds
+
+        counters.forEach(counter => {
+            counter.innerText = '0';
+            const updateCounter = () => {
+                const target = +counter.getAttribute('data-target');
+                const count = +counter.innerText;
+
+                // Calculate the increment based on the duration
+                const increment = target / (duration / 30);
+
+                if (count < target) {
+                    counter.innerText = `${Math.ceil(count + increment)}`;
+                    setTimeout(updateCounter, 30);
+                } else {
+                    counter.innerText = target;
+                }
+            };
+            updateCounter();
+        });
+    });
+
+</script>
 </body>
 </html>
