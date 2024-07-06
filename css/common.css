@@ -1,11 +1,13 @@
 @import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
+/* Global Styles */
 * {
 margin: 0;
 padding: 0;
 box-sizing: border-box;
 font-family: Arial, sans-serif;
 }
-html {
+html, body {
+width: 100%;
 overflow-x: hidden; /* Prevent horizontal scrolling */
 overflow-y: auto; /* Enable vertical scrolling */
 scroll-snap-type: y mandatory; /* Enable vertical scroll snapping */
@@ -18,7 +20,7 @@ background-color: rgba(0, 0, 0, 0.9); /* Dark background with 90% opacity */
 backdrop-filter: blur(10px); /* Frosted glass effect */
 -webkit-backdrop-filter: blur(10px); /* For Safari */
 border-radius: 0;
-width: 100%;
+width: 100%;  
 padding: 1% 2%; /* Adjust padding as needed */
 display: flex;
 justify-content: space-between;
@@ -26,7 +28,8 @@ align-items: center;
 z-index: 1000;
 }
 .fixed-header .logo img {
-height: 55px;
+max-width: 100%;
+height: auto;
 }
 .fixed-header nav {
 display: flex;
@@ -130,7 +133,8 @@ color: #fff;
 font-size: 1.5em;
 }
 .footer-left img {
-height: 55px;
+max-width: 100%;
+height: auto;
 }
 .footer-left p {
 max-width: 400px;

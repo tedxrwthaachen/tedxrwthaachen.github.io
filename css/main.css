@@ -10,6 +10,7 @@ color: white;
 .content-text {
 flex: 1;
 padding: 20px;
+max-width: 100%;
 }
 .content-text h1 {
 font-size: 4em;
@@ -106,9 +107,9 @@ opacity: 0.7;
 }
 /* Responsive Adjustments */
 @media (max-width: 850px) {
-.partners-container {
-grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
-}
+    .partners-container {
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    }
 }
 .marquee {
 width: 100%;
@@ -145,7 +146,8 @@ display: flex;
 justify-content: space-around;
 }
 .video {
-max-width: 500px;
+max-width: 100%;
+margin: 10px 0;
 }
 .video iframe {
 width: 100%;
@@ -180,7 +182,7 @@ opacity: .7;
         text-align: center;
     }
     .content-text h1 {
-        font-size: 2.5em;
+        font-size: 2em;
     }
     .content-image img {
         max-height: 300px;
