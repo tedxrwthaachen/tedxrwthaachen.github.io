@@ -40,3 +40,43 @@ height: auto;
 object-fit: cover;
 /*clip-path: polygon(0 0, 100% 0, 100% 70%, 0 100%);*/
 }
+/* Responsive Design for Phones */
+@media (max-width: 600px) {
+    .container {
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+        margin-top: 20px;
+    }
+    .content {
+        width: 100%;
+        margin-right: 0;
+    }
+    .content h2 {
+        font-size: 1.5em;
+    }
+    .content p {
+        font-size: 0.9em;
+    }
+    .image {
+        width: 100%;
+        margin-top: 20px;
+    }
+    .image img {
+        width: 100%;
+        height: auto;
+    }
+    .btndesign1 {
+        display: block;
+        width: 100%;
+        padding: 15px;
+        background-color: #e62b1e;
+        color: #fff;
+        text-align: center;
+        text-decoration: none;
+        font-size: 1em;
+        margin-top: 20px;
+        border: none;
+        cursor: pointer;
+    }
+}

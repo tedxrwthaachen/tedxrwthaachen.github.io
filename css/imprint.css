@@ -1,5 +1,4 @@
 .text-section {
-font-family: Arial, sans-serif;
 line-height: 1.6;
 margin: 100px;
 color: #000;
@@ -35,4 +34,21 @@ margin: 0;
 }
 .consumer p:last-child {
 margin-top: 20px;
+}
+
+/* Responsive Design for Phones */
+@media (max-width: 600px) {
+    .text-section {
+        margin: 20px;
+        padding: 10px;
+    }
+    h1 {
+        font-size: 1.5em;
+    }
+    h2 {
+        font-size: 1.3em;
+    }
+    p {
+        font-size: 0.9em;
+    }
 }
