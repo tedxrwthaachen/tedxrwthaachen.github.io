@@ -181,3 +181,7 @@ text-decoration: none;
     margin-bottom: 0;
     }
 }
+.contact-button{
+color: red;
+border: 3px solid red ;
+}
