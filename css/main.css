@@ -172,3 +172,33 @@ transition: background-color 0.3s ease;
 .discover-more-button:hover {
 opacity: .7;
 }
+/* Responsive Adjustments for Mobile Devices */
+@media (max-width: 600px) {
+    /* Intro Section */
+    .intro-section {
+        flex-direction: column;
+        text-align: center;
+    }
+    .content-text h1 {
+        font-size: 2.5em;
+    }
+    .content-image img {
+        max-height: 300px;
+    }
+
+    /* Small About Us Section */
+    .statistics {
+        flex-direction: column;
+    }
+    .stat {
+        margin: 10px 0;
+    }
+
+    /* Past Talks Section */
+    .videos-container {
+        flex-direction: column;
+    }
+    .video {
+        max-width: 100%;
+    }
+}
