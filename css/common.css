@@ -134,17 +134,22 @@ height: 55px;
 }
 .footer-left p {
 max-width: 400px;
-}
-.footer-left p, .footer-center p, .footer-center a {
 margin: 5px 0;
+}
+.footer-center p {
+margin: 5px 0;
+color: white;
 }
 .footer-center a {
 font-size: 1.2em;
-margin-bottom: 10px;
-}
-.footer-center a {
+margin: 10px 0;
 color: red;
 text-decoration: none;
+}
+.contact-button {
+color: white;
+border: 3px solid red;
+cursor: pointer;
 }
 .footer-right {
 text-align: left;
@@ -180,8 +185,4 @@ text-decoration: none;
     .footer-left, .footer-center, .footer-right {
     margin-bottom: 0;
     }
-}
-.contact-button{
-color: red;
-border: 3px solid red ;
 }
