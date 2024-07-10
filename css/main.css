@@ -13,7 +13,7 @@ padding: 20px;
 max-width: 100%;
 }
 .content-text h1 {
-font-size: 4em;
+font-size: 2.5em;
 margin: 20px;
 color: red;
 }
@@ -130,7 +130,6 @@ to {
 transform: translateX(-100%);
 }
 }
-
 /*Past Talks Section*/
 .past-talks-section {
 text-align: center;

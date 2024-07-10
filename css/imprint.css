@@ -35,7 +35,6 @@ margin: 0;
 .consumer p:last-child {
 margin-top: 20px;
 }
-
 /* Responsive Design for Phones */
 @media (max-width: 600px) {
     .text-section {

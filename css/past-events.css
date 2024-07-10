@@ -1,0 +1,113 @@
+.timeline {
+position: relative;
+max-width: auto;
+margin: 0 auto;
+padding: 40px 20px; /* Added padding to the sides for better spacing */
+text-align: center;
+}
+.timeline::after { /*Middle Line*/
+content: '';
+position: absolute;
+width: 6px;
+background-color: red;
+top: 0;
+bottom: 0;
+left: 50%;
+margin-left: -3px;
+}
+.timeline-event:nth-child(odd) {
+flex-direction: row-reverse;
+}
+.timeline-event:nth-child(even) {
+flex-direction: row;
+}
+.timeline-event:nth-child(odd) .timeline-image {
+left: 50%;
+margin-left: -75px; /* Half the width of the image */
+}
+.timeline-event:nth-child(even) .timeline-image {
+left: 50%;
+margin-left: -75px; /* Half the width of the image */
+}
+.timeline-event {
+display: flex;
+justify-content: flex-start;
+align-items: center;
+padding: 20px 0;
+position: relative;
+gap: 50px;
+}
+.timeline-event .timeline-content {
+padding: 20px;
+width: 45%;
+border-radius: 8px;
+position: relative;
+z-index: 1;
+}
+.timeline-event .timeline-image {
+width: 150px;
+height: 150px;
+border-radius: 50%;
+overflow: hidden;
+box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+background-color: white;
+position: absolute;
+top: 50%;
+transform: translateY(-50%);
+z-index: 2;
+}
+.timeline-event .timeline-image img {
+width: 100%;
+height: 100%;
+object-fit: cover; /* Ensures the image covers the container while maintaining aspect ratio */
+}
+.timeline-event h3,
+.timeline-event h4 {
+margin: 0;
+}
+.timeline-event p {
+margin-top: 10px;
+color: #777;
+padding: 0 20px; /* Added padding to the sides for better spacing */
+}
+/* Responsive Design for Phones */
+@media (max-width: 768px) {
+    .timeline {
+        padding: 20px 10px; /* Adjust padding for smaller screens */
+    }
+    .timeline::after {
+        left: 20px; /* Move the red line to the left */
+        margin-left: 0;
+    }
+    .timeline-event {
+        flex-direction: column;
+        align-items: left; /* Align items to the left */
+        padding-left: 30px; /* Add padding to align with the red line */
+    }
+    .timeline-event:nth-child(odd),
+    .timeline-event:nth-child(even) {
+        flex-direction: column;
+    }
+    .timeline-event:nth-child(odd) .timeline-image,
+    .timeline-event:nth-child(even) .timeline-image {
+        left: 0%;
+        margin-left: -75px; /* Half the width of the image */
+        }
+    .timeline-event .timeline-image {
+        position: relative;
+        left: 0;
+        margin-left: 0;
+        top: 0;
+        transform: none;
+        margin-bottom: 20px; /* Add space below the image */
+        align-self: flex-start; /* Align image to the left */
+    }
+    .timeline-event .timeline-content {
+        width: 100%;
+        text-align: left;
+        padding: 0 10px; /* Adjust padding for smaller screens */
+    }
+    .timeline-event p, .timeline-event h3, .timeline-event h4 {
+        text-align: left;
+    }
+}

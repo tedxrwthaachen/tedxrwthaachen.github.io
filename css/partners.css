@@ -77,7 +77,6 @@ font-weight: bold;
 .benefits-intro .get-in-touch:hover {
 text-decoration: underline;
 }
-
 /* Accordion Styles */
 .accordion {
 max-width: 800px;
@@ -139,7 +138,6 @@ font-size: 14px;
 font-size: 16px;
 }
 }
-
 /* Support Our Mission Section */
 .support-section {
 padding: 40px 20px;
@@ -178,7 +176,6 @@ text-align: center;
 .past-sponsor img:hover {
     opacity: 0.7;
 }
-
 /* Responsive Adjustments */
 @media (max-width: 600px) {
     .support-button {
