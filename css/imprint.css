@@ -8,11 +8,10 @@ font-weight: normal;
 }
 h1 {
 font-size: 2em;
-margin-bottom: 20px;
+margin-top: 20px;
 }
 h2 {
 font-size: 1.5em;
-margin-top: 40px;
 margin-bottom: 20px;
 }
 .highlight {
@@ -35,6 +34,31 @@ margin: 0;
 .consumer p:last-child {
 margin-top: 20px;
 }
+.team-section, .address-section, .section-contact, .section-eu, .section-consumer {
+padding-left: 20px;
+}
+.team-member {
+margin-bottom: 20px;
+}
+.profile {
+display: flex;
+align-items: center;
+}
+.photo img {
+width: 100px;
+height: 100px;
+border-radius: 50%;
+margin-right: 20px;
+}
+.info p {
+margin: 0;
+font-weight: bold;
+}
+.info a img {
+width: 20px;
+height: 20px;
+margin-left: 10px;
+}
 /* Responsive Design for Phones */
 @media (max-width: 600px) {
     .text-section {
@@ -49,5 +73,19 @@ margin-top: 20px;
     }
     p {
         font-size: 0.9em;
+    }
+    .profile {
+    flex-direction: column;
+    align-items: flex-start;
+    }
+
+    .photo img {
+    margin-right: 0;
+    margin-bottom: 10px;
+    }
+
+    .info a img {
+    margin-left: 0;
+    margin-right: 10px; /* Adjusting margin for better spacing */
     }
 }

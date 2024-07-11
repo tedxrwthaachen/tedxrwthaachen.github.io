@@ -153,17 +153,21 @@ margin: 5px 0;
 .footer-center p {
 margin: 5px 0;
 color: white;
+padding-left: 5px;
 }
 .footer-center a {
 font-size: 1.2em;
 margin: 10px 0;
 color: red;
 text-decoration: none;
+padding-left: 5px;
 }
 .contact-button {
 color: white;
-border: 3px solid red;
+border: 2px solid red;
+border-radius: 5px;
 cursor: pointer;
+padding: 3px 5px;
 }
 .footer-right {
 text-align: left;
