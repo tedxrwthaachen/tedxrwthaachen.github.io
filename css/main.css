@@ -49,11 +49,6 @@ box-sizing: border-box;
 text-align: center;
 padding: 20px;
 }
-.about-us h2 {
-font-size: 2em;
-margin-bottom: 20px;
-color: red;
-}
 .about-us p {
 font-size: 1.1em;
 margin-bottom: 30px;
@@ -134,11 +129,6 @@ transform: translateX(-100%);
 .past-talks-section {
 text-align: center;
 margin: 50px 0;
-}
-.past-talks-section h2 {
-font-size: 2em;
-color: red; /* Adjust the color as needed */
-margin-bottom: 30px;
 }
 .videos-container {
 display: flex;
