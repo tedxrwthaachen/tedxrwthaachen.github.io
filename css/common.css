@@ -82,6 +82,13 @@ color: #03a9f4;
     padding: 10px;
     }
 }
+.section-title {
+font-size: 36px;
+font-weight: bold;
+color: black;
+margin-bottom: 20px;
+text-align: center;
+}
 
 .btndesign1 {
     color: red;
