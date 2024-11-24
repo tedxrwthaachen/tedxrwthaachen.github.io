@@ -64,6 +64,10 @@ object-fit: cover; /* Ensures the image covers the container while maintaining a
 .timeline-event h3,
 .timeline-event h4 {
 margin: 0;
+color: black;
+}
+.timeline-event a {
+text-decoration: none; /* Removes underline from links */
 }
 .timeline-event p {
 margin-top: 10px;
