@@ -1,0 +1,103 @@
+.upcoming-event {
+padding: 40px;
+display: flex;
+justify-content: center;
+align-items: center;
+text-align: center;
+flex-direction: column;
+height: 70vh;
+}
+.upcoming-event h1 {
+font-size: 2.5em;
+margin: 0 0 10px;
+color: red;
+}
+.upcoming-event p {
+font-size: 1.2em;
+color: black;
+}
+/* General Styling */
+.podcast-section {
+max-width: 900px;
+margin: 0 auto;
+padding: 20px;
+}
+.podcast-card {
+display: flex;
+align-items: flex-start;
+margin-bottom: 20px;
+padding: 20px;
+background-color: #ffffff;
+border: 1px solid #ddd;
+border-radius: 8px;
+box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+width: 100%;
+}
+.podcast-card:last-child {
+margin-bottom: 0;
+}
+.podcast-image {
+width: 300px;
+height: 200px;
+border-radius: 8px;
+object-fit: cover;
+margin-right: 20px;
+}
+.podcast-details {
+flex: 1;
+}
+.podcast-title {
+font-size: 20px;
+font-weight: bold;
+margin-bottom: 10px;
+color: #333;
+}
+.podcast-guests,
+.podcast-info {
+font-size: 16px;
+color: #555;
+margin-bottom: 8px;
+}
+.podcast-guests strong {
+color: #000;
+}
+/* Responsive Design */
+@media (max-width: 768px) {
+    .podcast-card {
+      flex-direction: column; /* Stack the image and text */
+      align-items: center; /* Center align items */
+      text-align: center; /* Center align text */
+    }
+    .podcast-image {
+      width: 120px; /* Adjust image size for smaller screens */
+      height: 120px;
+      margin-right: 0; /* Remove horizontal spacing */
+      margin-bottom: 15px; /* Add spacing between image and text */
+    }
+    .podcast-details {
+      text-align: center;
+    }
+    .podcast-title {
+      font-size: 18px; /* Adjust font size for smaller screens */
+    }
+    .podcast-guests,
+    .podcast-info {
+      font-size: 14px; /* Adjust font size for smaller screens */
+    }
+  }
+@media (max-width: 480px) {
+    .podcast-card {
+      padding: 15px; /* Reduce padding for very small screens */
+    }
+    .podcast-image {
+      width: 100px;
+      height: 100px;
+    }
+    .podcast-title {
+      font-size: 16px;
+    }
+    .podcast-guests,
+    .podcast-info {
+      font-size: 12px;
+    }
+  }

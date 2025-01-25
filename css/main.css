@@ -3,14 +3,14 @@
 display: flex;
 align-items: center;
 justify-content: space-around;
-min-height: 100vh;
+min-height: 60vh;
 background: black;
 color: white;
 }
 .content-text {
 flex: 1;
 padding: 20px;
-max-width: 100%;
+width: 50%;
 }
 .content-text h1 {
 font-size: 2.5em;
@@ -28,16 +28,13 @@ margin: 10px 20px;
 display: inline-block;
 }
 .content-image {
-flex: 1;
-position: relative;
 padding: 20px;
+width: 50%;
+text-align: center;
 }
 .content-image img {
 width: auto;
-max-height: 600px;
-border: 1px solid black;
-position: relative;
-z-index: 2;
+max-height: 400px;
 }
 /*Small About Us Section*/
 .small-about-us {
@@ -169,6 +166,10 @@ opacity: .7;
     .intro-section {
         flex-direction: column;
         text-align: center;
+    }
+    .content-text{
+        width: 80%;
+        padding: 10px;
     }
     .content-text h1 {
         font-size: 2em;

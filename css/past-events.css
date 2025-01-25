@@ -2,7 +2,7 @@
 position: relative;
 max-width: auto;
 margin: 0 auto;
-padding: 40px 20px; /* Added padding to the sides for better spacing */
+padding: 40px 20px 0 20px; /* Added padding to the sides for better spacing */
 text-align: center;
 }
 .timeline::after { /*Middle Line*/
