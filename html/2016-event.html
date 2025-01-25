@@ -190,6 +190,15 @@
 <!--Footer Section-->
 <div data-inlcude="footer.html"></div>
 <script src="loadheaderfooter.js"></script>
-  
+<script>
+    function  showSidebar(){
+          const sidebar = document.querySelector('.sidebar')
+          sidebar.style.right = '0';
+      }
+    function  hideSidebar(){
+          const sidebar = document.querySelector('.sidebar')
+          sidebar.style.right = '-100%';
+      }
+</script>
 </body>
 </html>

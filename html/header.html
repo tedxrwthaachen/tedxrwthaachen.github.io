@@ -1,12 +1,24 @@
 <!--Header Section-->
 <header class="fixed-header">
-    <a href="../" class="logo"><img src="../img/logo/logo.png"></a>
-    <ul>
-        <li><a href="../">Home</a></li>
-        <li><a href="../html/about.html">About</a></li>
-        <li><a href="../html/team.html">Team</a></li>
-        <li><a href="../html/partners.html">Partners</a></li>
-        <li><a href="../html/podcast.html">Podcasts</a></li>
-        <li><a href="../html/past-events.html">Past Events</a></li>
-    </ul>
+    <a href="" class="logo"><img src="img/logo/logo.png" alt="TEDxRWTHAachen"></a>
+    <nav> 
+        <ul class="sidebar">
+            <li onclick=hideSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="../html/about.html">About</a></li>
+            <li><a href="../html/team.html">Team</a></li>
+            <li><a href="../html/partners.html">Partners</a></li>
+            <li><a href="../html/podcast.html">Podcasts</a></li>
+            <li><a href="../html/past-events.html">Past Events</a></li>
+        </ul>
+        <ul>
+            <li class="hideOnMobile"><a href="../index.html">Home</a></li>
+            <li class="hideOnMobile"><a href="../html/about.html">About</a></li>
+            <li class="hideOnMobile"><a href="../html/team.html">Team</a></li>
+            <li class="hideOnMobile"><a href="../html/partners.html">Partners</a></li>
+            <li class="hideOnMobile"><a href="../html/podcast.html">Podcasts</a></li>
+            <li class="hideOnMobile"><a href="../html/past-events.html">Past Events</a></li>
+            <li class="menu-button" onclick=showSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
+        </ul>
+    </nav>  
 </header>

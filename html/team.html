@@ -95,6 +95,14 @@
 <script src="loadheaderfooter.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 <script>
+    function  showSidebar(){
+        const sidebar = document.querySelector('.sidebar')
+        sidebar.style.right = '0';
+    }
+    function  hideSidebar(){
+        const sidebar = document.querySelector('.sidebar')
+        sidebar.style.right = '-100%';
+    }
 const swiper = new Swiper('.mySwiper', {
     slidesPerView: 1,
     speed: 400,
