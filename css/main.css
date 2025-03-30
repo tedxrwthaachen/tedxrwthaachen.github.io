@@ -36,6 +36,112 @@ text-align: center;
 width: auto;
 max-height: 400px;
 }
+/*2025 Event*/
+.event-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px 100px; /*ask seif adjust*/
+    height: 100vh;
+    margin: auto;
+    gap: 40px;
+    background-color: black;
+    background: url('../img/2025/event-background2.jpg') no-repeat center center/cover; /*ask seif adjust*/
+}
+.event-info {
+    max-width: 50%;
+}
+.event-info h1 {
+    font-size: 2.7em;
+    font-weight: 600;
+    line-height: 120%;
+    color: white;
+}
+.event-info p {
+    font-size: 1.3em;
+    margin: 10px 0;
+    color: white;
+}
+.buttons {
+margin-top: 30px;
+display: flex;
+gap: 15px;
+}
+.btn-learn {
+background: transparent;
+color: white;
+text-decoration: none;
+padding: 15px 30px;
+border: 2px solid white;
+font-size: 1.1em;
+border-radius: 8px;
+display: inline-block;
+font-weight: 600;
+transition: all 0.3s;
+}
+.btn-learn:hover {
+    background: white;
+    color: black;
+}
+.btn-tickets {
+background: red;
+color: white;
+padding: 15px 30px;
+font-size: 1.1em;
+border: none;
+border-radius: 8px;
+text-decoration: none;
+display: inline-block;
+font-size: 1.1em;
+font-weight: 600;
+transition: all 0.3s;
+}
+.btn-tickets:hover {
+    background: darkred;
+}
+.event-poster {
+flex: 1;    
+text-align: center;
+}
+.event-poster img {
+height: auto;
+width: 100%;
+border-radius: 10px;
+}
+@media (max-width: 1190px) {
+    /* 2025 Event Section - Mobile View */
+    .event-section {
+        flex-direction: column-reverse; /*colum for removing img*/
+        padding: 30px 20px;
+    }
+    .event-info {
+        max-width: 100%;
+        margin: 0;
+        text-align: center;
+    }
+    .event-info h1 {
+        font-size: 2em;
+    }
+    .event-info p {
+        font-size: 1em;
+        margin-bottom: 20px;
+    }
+    .buttons {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        align-items: center;
+    }
+    .event-poster img {
+        height: auto;
+        width: 50%;
+        border-radius: 10px;
+    }
+    /* Hide image on small screens 
+    .event-poster {
+        display: none;
+    }*/
+}
 /*Small About Us Section*/
 .small-about-us {
 margin: 20px;
