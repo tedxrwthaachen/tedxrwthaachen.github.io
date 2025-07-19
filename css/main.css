@@ -277,11 +277,13 @@ opacity: .7;
         width: 80%;
         padding: 10px;
     }
-    .content-text h1 {
-        font-size: 2em;
+    .content-text p {
+        font-size: large;
     }
     .content-image img {
-        max-height: 300px;
+        max-height: 200px;
+        width: auto;
+        align-items: center;
     }
 
     /* Small About Us Section */
